@@ -49,6 +49,12 @@ public class Account {
 	{
 		return this.accId+ " " + this.balance;
 	}
-	
+	public boolean equals(Object another) {
+		Account temp = (Account) another;
+		if (this.accId.equals(temp.accId) && (this.balance == temp.balance)) {
+			return true;
+		}
+		return false;
+	}
 	
 }
