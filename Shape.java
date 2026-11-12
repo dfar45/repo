@@ -1,6 +1,6 @@
 package session18;
 
-public class Shape {
+public abstract class Shape {
 	private String name;
 	private String color;
 	
@@ -34,4 +34,5 @@ public class Shape {
 	public String toString() {
 		return this.name+" "+this.color;
 	}
+	public abstract double getArea();
 }
